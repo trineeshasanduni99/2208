@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Q2</title>
+
+    </head>
+    <body>
+       
+        <label>Click below button to see curent time and how many hours are remaining from the day.</label><br>
+        <input type="button" value="Click me" onclick="myFun()"><br>
+        <label id="l1"></label><br>
+        <label id="l2"></label>
+  
+        <script>
+            
+      function myFun() {
+        const d = new Date();
+        let curentTime = d.toLocaleTimeString();
+        let remainigHours = 24 - d.getHours();
+        document.getElementById("l1").innerHTML = "Now the time is: " + curentTime;
+        document.getElementById("l2").innerHTML = "Remains: " + remainigHours + " hours more...";
+    }
+
+        </script>
+
+    </body>
+</html>
+
+

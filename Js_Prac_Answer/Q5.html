@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>Q5</title>
+        <style>
+            
+            button[type=submit] {
+                width: 50%;
+                background-color: #4CAF50;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+              }  
+            
+              .d1{
+                background-color: #f2f2f2;
+                padding: 25px;
+                padding-top: 5px;
+                width: 400px;
+                margin-left: 500px;
+              }
+              .d2{
+                background-color: #ffffff;
+                padding: 25px;
+                width: 400px;
+                margin-left: 500px;
+                color: rgb(4, 0, 255);
+              }
+              .d3{
+                background-color: #f2f2f2;
+                padding: 25px;
+                width: 400px;
+                margin-left: 500px;
+              }
+              .d4{
+                background-color: #ffffff;
+                padding: 25px;
+                width: 400px;
+                margin-left: 500px;
+              }
+
+        </style>
+    </head>
+    <body>
+        <div class="d1">
+            <h1>Purchase your item</h1>
+        </div>
+        <div class="d2">
+            Free Trial
+        </div>
+        <div class="d3">
+            help you to design<br>
+            provide security<br>
+            manage your plans
+
+        </div>
+        <div class="d4"><button id="btn">Try it now</button></div>
+    <script >
+        const btn = document.getElementById('btn');
+
+        btn.addEventListener('click', function onClick() {
+        btn.style.backgroundColor = 'blue';
+        btn.style.color = 'white';
+    }
+    );
+            
+        
+    </script>
+
+    </body>
+</html>

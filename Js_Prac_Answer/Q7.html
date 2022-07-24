@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Q7</title>
+        <style>
+            div {
+                
+                background-color: #ffffff;
+                padding: 10px;
+                border: 10%;
+                width: 250px;
+                margin-left: 600px;
+                border-style: solid;
+                border-color: black;
+               
+              }
+              button[type=submit] {
+                width: 70%;
+                background-color: #424642;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+              }
+        </style>
+        
+    </head>
+
+    <body>
+        <div>
+            <form>
+                <h3>Available Hotel Packages</h3> 
+                <tr><td><input type="checkbox" name="progress" id="progress1" value="1" tabIndex="1" onClick="ckChange(this)">Wedding Package</td></tr><br>
+                <tr><td><input type="checkbox" name="progress" id="progress2" value="1" tabIndex="1" onClick="ckChange(this)">Birthday Package</td></tr><br>
+                <tr><td><input type="checkbox" name="progress" id="progress3" value="1" tabIndex="1" onClick="ckChange(this)">Normal Function Package</td></tr><br>
+                <tr><td><input type="checkbox" name="progress" id="progress4" value="1" tabIndex="1" onClick="ckChange(this)">Day out Package</td></tr><br><br>
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
+        <script>
+            function ckChange(ckType){
+            var ckName = document.getElementsByName(ckType.name);
+            var checked = document.getElementById(ckType.id);
+        
+            if (checked.checked) {
+              for(var i=0; i < ckName.length; i++){
+        
+                  if(!ckName[i].checked){
+                      ckName[i].disabled = true;
+                  }else{
+                      ckName[i].disabled = false;
+                  }
+              } 
+            }
+            else {
+              for(var i=0; i < ckName.length; i++){
+                ckName[i].disabled = false;
+              } 
+            }    
+            }
+        </script>
+    </body>
+</html>
